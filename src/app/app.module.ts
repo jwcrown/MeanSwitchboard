@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { SwitchboardComponent } from './switchboard/switchboard.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SwitchboardComponent
   ],
   imports: [
     BrowserModule

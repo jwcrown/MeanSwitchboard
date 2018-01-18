@@ -1,0 +1,10 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<div class="wrapper" class="text-center">
+  <div class="jumbotron">
+    <h1>Switchboard</h1>
+  </div>
+  <div class="switch" *ngFor ="let button of buttons; let idx = index">
+      <button class="btn-lg btn-success" *ngIf="button.myswitch" [ngClass]="{'On': myswitch}" (click)="onButtonClick(idx)">ON</button>
+      <button class="btn-lg btn-danger" *ngIf="!button.myswitch" [ngClass]="{'On': myswitch}" (click)="onButtonClick(idx)">OFF</button>
+  </div>
+</div>
